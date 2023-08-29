@@ -58,7 +58,7 @@ struct ProfileView: View {
                         
                             .background(.black)
                             .foregroundColor(.white)
-                            .cornerRadius(6.25)
+                            .cornerRadius(12.25)
                     })
                     Button(action: {
 
@@ -71,7 +71,7 @@ struct ProfileView: View {
                             .padding(.vertical, 8)
                             .background (
                                 RoundedRectangle(cornerRadius:
-                                                    6.25)
+                                                    12.25)
                                 .stroke(.gray.opacity (0.25)))
                         
                     }).buttonStyle(.plain)
@@ -104,15 +104,25 @@ struct ProfileView: View {
 
                     }, label: {
                         Text("Edit profile")
-                            .frame(maxWidth: .infinity).padding(.horizontal, 16)
+                             .frame (maxWidth: .infinity)
+                            .padding (.horizontal, 16)
                             .padding(.vertical, 8)
-                            .background(Color.black)
+                        
+                            .background(.black)
                             .foregroundColor(.white)
+                            .cornerRadius(12.25)
                     })
                     Button(action: {
 
                     }, label: {
-                        Text("Share profile").frame(maxWidth: .infinity)
+                        Text("Share profile")
+                        .frame (maxWidth: .infinity)
+                            .padding (.horizontal, 16)
+                            .padding(.vertical, 8)
+                        
+                            .background(.black)
+                            .foregroundColor(.white)
+                            .cornerRadius(12.25)
                     })
 
                 }
